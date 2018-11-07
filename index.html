@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Teste do zapzap</title>
+  <link rel="shortcut icon" href="https://logodownload.org/wp-content/uploads/2015/04/whatsapp-logo-4-1.png" type="image/x-icon">
+</head>
+<body>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam facilisis tellus ac nisi finibus tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam sed tellus consectetur, porta ligula vel, dapibus mi. Praesent sodales tortor neque, eget euismod erat maximus non. Mauris gravida mauris quis est volutpat blandit. Curabitur id ex sit amet neque blandit consequat. Duis fringilla tincidunt diam a fermentum. Donec sed risus lacus.</p>
+  <p>Donec et lacus elementum, tristique arcu vitae, ultrices turpis. Quisque finibus sapien in sem dignissim aliquam. Maecenas accumsan sit amet justo in pretium. Aliquam molestie magna nec mauris sollicitudin vulputate. Nulla semper nunc ut tortor condimentum, at vulputate diam scelerisque. Maecenas sodales vitae enim nec aliquet. Nam id aliquet lacus. Mauris tortor nibh, ullamcorper quis quam sed, fermentum dictum ex.</p>
+  <a class='zap' href='' style="text-align: center;">
+    <img src="https://logodownload.org/wp-content/uploads/2015/04/whatsapp-logo-4-1.png" alt="">
+    Compartilhar
+  </a>
+  <style>
+    .zap{
+      text-align: center;
+      display: block;
+      color: #000;
+    }
+    .zap img {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  </style>
+  <script>
+    document.querySelector('.zap').href = `whatsapp://send?text=Veja agora: ${document.title} ${window.location.href}`;
+  </script>
+</body>
+</html>
